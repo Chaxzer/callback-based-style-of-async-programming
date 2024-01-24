@@ -19,6 +19,11 @@ loadScript = (src, callback) => {
     callback(src);
   };
 
+  
+  // can use this on error 
+  // script.onerror = () =>{}
+  //   console.log("Error loading script with src: " + src)}
+
   // Append the script element to the body of the HTML document
   document.body.appendChild(script);
 };
